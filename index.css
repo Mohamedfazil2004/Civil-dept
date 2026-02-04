@@ -4478,19 +4478,42 @@ body {
 
     /* 8. Infrastructure & Labs */
     .lab-life-section .features-grid {
-        grid-template-columns: 1fr !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 10px !important;
+    }
+
+    .lab-last {
+        grid-column: 1 / -1 !important;
+        justify-self: center;
+        width: 100%;
+        max-width: 320px;
     }
 
     .lab-image-card {
-        height: 260px !important;
+        height: 200px !important;
+        border-radius: 12px !important;
+    }
+
+    .lab-overlay {
+        padding: 1rem !important;
+    }
+
+    .overlay-text {
+        font-size: 1rem !important;
+        margin-bottom: 0 !important;
+        transform: translateY(0) !important;
+    }
+
+    .overlay-desc {
+        display: none !important;
     }
 
     .full-width-lab {
-        height: 350px !important;
+        height: 300px !important;
     }
 
     .full-width-lab .overlay-text {
-        font-size: 1.8rem !important;
+        font-size: 1.4rem !important;
         text-align: center;
     }
 
