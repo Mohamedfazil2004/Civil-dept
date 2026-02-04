@@ -4317,11 +4317,11 @@ body {
     .hero-diagonal {
         flex-direction: column;
         min-height: auto;
-        padding-bottom: 0 !important;
+        padding-bottom: 2rem !important;
     }
 
     .stats-circular {
-        padding-top: 0 !important;
+        padding-top: 2rem !important;
     }
 
     .hero-left {
