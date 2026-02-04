@@ -4317,6 +4317,11 @@ body {
     .hero-diagonal {
         flex-direction: column;
         min-height: auto;
+        padding-bottom: 0 !important;
+    }
+
+    .stats-circular {
+        padding-top: 0 !important;
     }
 
     .hero-left {
