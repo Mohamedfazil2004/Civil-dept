@@ -1390,35 +1390,19 @@ a {
    =================================== */
 
 .lab-life-section .features-grid {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     justify-content: center;
     gap: var(--spacing-lg);
 }
 
 .lab-life-section .features-grid .feature-card {
-    flex: 0 0 100%;
-}
-
-@media (min-width: 768px) {
-    .lab-life-section .features-grid .feature-card {
-        flex: 0 0 calc(50% - (var(--spacing-lg) / 2));
-    }
+    width: 100%;
 }
 
 @media (min-width: 1200px) {
-    .lab-life-section .features-grid .feature-card {
-        flex: 0 0 calc(33.333% - (2 * var(--spacing-lg) / 3));
-    }
-}
-
-@media (max-width: 480px) {
     .lab-life-section .features-grid {
-        gap: 5px;
-    }
-
-    .lab-life-section .features-grid .feature-card {
-        flex: 0 0 calc(50% - 2.5px);
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
@@ -4479,18 +4463,20 @@ body {
     /* 8. Infrastructure & Labs */
     .lab-life-section .features-grid {
         grid-template-columns: 1fr !important;
-        gap: 20px !important;
+        gap: 30px !important;
+        padding: 0 2rem !important;
+        /* "Inches of gap" on both sides */
     }
 
     .lab-last {
         grid-column: span 1 !important;
-        width: 100% !important;
-        max-width: none !important;
     }
 
     .lab-image-card {
-        height: 280px !important;
-        border-radius: 20px !important;
+        height: 320px !important;
+        /* Increased height to match wider narrow screen look */
+        border-radius: 24px !important;
+        width: 100% !important;
     }
 
     .lab-overlay {
