@@ -4566,3 +4566,79 @@ body {
         align-items: center !important;
     }
 }
+
+/* ===================================
+   MOBILE STICKY CTA REDESIGN
+   =================================== */
+
+.sticky-cta-mobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .sticky-cta-mobile {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: #ffffff;
+        box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
+        z-index: 9999;
+        padding: 12px 16px;
+        gap: 12px;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: max(12px, env(safe-area-inset-bottom));
+        border-top: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .sticky-action-btn {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 4px;
+        border-radius: 12px;
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+        transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        height: 60px;
+        color: white;
+    }
+
+    .sticky-action-btn:active {
+        transform: scale(0.96);
+    }
+
+    .sticky-action-btn i {
+        font-size: 1.25rem;
+        margin-bottom: 4px;
+    }
+
+    .sticky-action-btn span {
+        font-size: 0.75rem;
+        font-weight: 700;
+        font-family: var(--heading-font, sans-serif);
+        line-height: 1.2;
+    }
+
+    /* Button Colors */
+    .btn-navy {
+        background-color: #1e293b;
+        /* Dark Navy */
+    }
+
+    .btn-green {
+        background-color: #00ca55;
+        /* Vibrant WhatsApp Green */
+    }
+
+    .btn-blue {
+        background-color: #1d4ed8;
+        /* Royal Blue */
+    }
+}
