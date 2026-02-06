@@ -4317,11 +4317,12 @@ body {
     .hero-diagonal {
         flex-direction: column;
         min-height: auto;
-        padding-bottom: 2rem !important;
+        padding-bottom: 0 !important;
     }
 
     .stats-circular {
         padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
     }
 
     .hero-left {
@@ -4362,7 +4363,7 @@ body {
     }
 
     .hero-right {
-        padding: 2rem 1rem;
+        padding: 2rem 1rem 0;
         width: 100%;
     }
 
